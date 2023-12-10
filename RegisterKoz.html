@@ -9,15 +9,18 @@
 			Date: 09/09/2023
 			Filename: Project Food Truck.html
 		-->
+		<!-- Metadata is set here-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta name="keywords" content="Food Truck" />
 	<title>Register | Project Koz's Food Truck</title>
+	<!-- linking CSS files -->
 	<link rel="stylesheet" href="CSS/Koz_styles.css" />
 	<link rel="stylesheet" href="CSS/Koz_layout.css" />
 </head>
 
 <body>
+	<!-- Nav list with hypertext links -->
 	<nav id="menu-horizontal">
 		<ul>
 			<li><a href="ProjectFoodTruck.html">Home Page</a></li>
@@ -36,8 +39,10 @@
 			<li><a href="RegisterKoz.html">Register</a></li>
 		</ul>
 	</nav>
+	<!-- Use of sectioning and grouping and text-level elements -->
 	<section>
 		<h1> Contact Koz`s Food Truck</h1>
+		<!-- Inline image example -->
 		<img class="pizza-img-generic" src="images/TruckPizza3.svg" alt="Truck pizza" />
 	</section>
 
@@ -46,30 +51,31 @@
 			<div class="contact-ledt">
 				<h2>Registation</h2>
 				<form id="regForm" class="reservation-form" action="">
-					<!--required is added--> 
+					<!-- required is added - For Tutorial 7 -->
 					<div>
 						<label for="firstname">First Name</label>
 						<input type="text" id="firstname" name="firstname" required>
 					</div>
-					<!--required is added and a minimum length is added--> 
+
+					<!-- required is added and a minimun length is added - For Tutorial 7 -->
 					<div>
 						<label for="lastname">Last Name</label>
 						<input type="text" id="lastname" name="lastname" min="2" required>
 					</div>
 
-					<!-- Pattern for Email -->
+					<!-- Pattern for Email and required is added - For Tutorial 7 -->
 					<div>
 						<label for="email">Email</label>
 						<input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter your email" name="email" required>
 					</div>
 
-					<!-- Length for Password - Minimum of 5 characters -->
+					<!-- Length for Password - Minimum of 5 characters - For Tutorial 7 -->
 					<div>
 						<label for="password">Password</label>
 						<input type="text" id="password" name="password" min="5" required>
 					</div>
 
-					<!-- Favorite Pizza - Datalist with Input --> 
+					<!-- Favorite Pizza - Datalist with Input - For Tutorial 7 --> 
 					<div>
 						<label for="favorite-pizza">Favorite Pizza</label>
 						<input list="favorite-pizza-list" type="text" id="favorite-pizza" name="favorite-pizza">
@@ -80,14 +86,14 @@
 						</datalist>
 					</div>
 
-					<!-- Date/Time Input -->
+					<!-- Date/Time Input - For Tutorial 7 -->
 
 					<div>
-						<label for="date">Email 2</label>
-						<input type="date" id="date" name="date" placeholder="me@example.com">
+						<label for="date">Date Registered</label>
+						<input type="date" id="date" name="date">
 					</div>
 
-					<!-- Radio Buttons Input -->
+					<!-- Radio Buttons Input - For Tutorial 7 -->
 					<div>
 						<label for="male">Male</label>
 						<input type="radio" id="male" name="gender" value="male">
@@ -104,49 +110,47 @@
 					</div>
 
 
-					<!-- Spinners, Numeric Input -->
+					<!-- Spinners, Numeric Input With Length - For Tutorial 7 -->
 					<div>
 						<label for="">Maximun Number of Pizza Ordered in a Day </label>
 						<input type="number" min="1" max="100" step="1" value="3">
 					</div>
 
-					<!-- Range Slider Input -->
+					<!-- Range Slider Input - For Tutorial 7 -->
 					<div>
 						<label for="experience">How many pizzas do you buy pizza a month <span id="rangeValue">3</span></label><br>
-						<input id="inputRange"  type="range" id="experience" name="experience" min="1" max="50" value="1">
-						
+						<input id="inputRange"  type="range" id="experience" name="experience" min="1" max="50" value="1">	
 					</div>
 
 
-					<!-- Check Boxes Input -->
+					<!-- Check Boxes Input - For Tutorial 7 -->
 					<div>
-						<label for="interests">Interests:</label><br>
-						<input type="checkbox" id="interest1" name="interest" value="music">
-						<label for="interest1"> Music</label><br>
-						<input type="checkbox" id="interest2" name="interest" value="sports">
+						<h3>Favorite Sauces</h3>
+						<label for="Buffalo">Buffalo</label><br>
+						<input type="checkbox" id="Buffalo" name="Buffalo" value="Buffalo">
+						<label for="Honey-BBQ"> Honey BBQ</label><br>
+						<input type="checkbox" id="Honey-BBQ" name="HoneyBBQ" value="Honey BBQ">
+						<label for="Sweet-Habanero">Sweet-Habanero</label><br>
+						<input type="checkbox" id="Sweet-Habanero" name="Sweet Habanero" value="Sweet Habanero">
+						<label for="Lemon-Pepper">Lemon Pepper</label><br>
+						<input type="checkbox" id="Lemon-Pepper" name="Lemon Pepper" value="Lemon Pepper">
 					</div>
 
+					<!-- Selection List - For Tutorial 7 -->
 					<div>
-						<label for="interest2"> Sports</label><br>
-						<input type="checkbox" id="interest3" name="interest" value="travel">
-						<label for="interest3"> Travel</label><br>
-					</div>
-
-					<!-- Selection List -->
-					<div>
-						<label for="proficiency">Select Proficiency in a Programming Language:</label><br>
-						<select id="proficiency" name="proficiency">
-							<option value="beginner">Beginner</option>
-							<option value="intermediate">Intermediate</option>
-							<option value="advanced">Advanced</option>
-							<option value="expert">Expert</option>
+						<label for="soda">Select Favorite Soda:</label><br>
+						<select id="soda" name="soda">
+							<option value="Pepsi">Pepsi</option>
+							<option value="Coca-Cola">Coca-Cola</option>
+							<option value="Sprite">Sprite</option>
+							<option value="Dr.Pepper">Dr. Pepper</option>
 						</select>
 					</div>
 
-					<!-- Textarea Tag -->
+					<!-- Textarea Tag withe Format - For Tutorial 7 -->
 					<div>
 						<label for="address">Address</label>
-						<textarea name="address" id="address" cols="30" rows="12" required></textarea>
+						<textarea name="address" id="address" cols="3" rows="2" required></textarea>
 					</div>
 
 					<div>
@@ -154,22 +158,20 @@
 						<input type="number" id="zipcode" name="zipcode" required>
 					</div>
 
-					<!-- Input For Mobile with type of tel:  -->
+					<!-- Input For Mobile with type of tel: - For Tutorial 7  -->
 					<div>
 						<label for="">Phone Number</label>
 						<input type="tel" inputmode="numeric">
 					</div>
 					<!-- Input -->
-
-					<!-- ************************************************ -->
 					
-					<!-- Submit Button -->
+					<!-- Submit Button - For Tutorial 7 -->
 					<div>
 						<label for="reset">Register</label>
 						<input id="submit" type="submit" class="Send-message-cta" value="Register">
 					</div>
 
-					<!-- Reset Button -->
+					<!-- Reset Button - For Tutorial 7 -->
 					<div>
 						<label for="reset">Reset</label>
 						<input type="reset" class="Send-message-cta reset" name="reset">
@@ -179,11 +181,14 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<script>
+		/* Updates the value of the range input - For Tutorial 7 */
 		document.getElementById("inputRange").addEventListener("input", function() {
 			document.getElementById("rangeValue").textContent = document.getElementById("inputRange").value;
 		})
+
+/* Alert Code: This code adds an alert which is called after registration - For Tutorial 7 */
 		document.getElementById("regForm").addEventListener("submit", function(event) {
 			event.preventDefault();
 			alert("Registration Sent!!")

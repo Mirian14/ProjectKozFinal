@@ -23,6 +23,7 @@
 
 /* Global Styled
 -------------------------*/
+/* CSS contains use of contextual/attribute selectors */
 * {
 	/* margin: 0 auto; */
 	padding: 0;
@@ -31,8 +32,10 @@
 	font-family: 'Playpen Sans', cursive;
 	font-weight: 400;
 	font-size: 1.1rem;
-	background-color: #FFD700;
+	background-color: #FFD700; /* Format for background Example */
 }
+
+/* Using relative postioning */
 
 body {
 	margin: 0 auto;
@@ -82,8 +85,10 @@ h3.third {
 	transition: background .4s;
 }
 
+/* Use of pseudo classes for hypertext links */
+
 #menu-horizontal ul li a:hover {
-	background-color: #FFD700;
+	background-color: #FFD700; /* Format for background Example */
 
 }
 
@@ -104,8 +109,10 @@ h3.third {
 	margin-bottom: 5px;
 }
 
+/* Using absolute positioning */
+
 #clock {
-	position: fixed;
+	position: absolute;
 	top: 30px;
 	right: 14px;
 }
@@ -191,6 +198,9 @@ textarea {
 	padding-bottom: 2px;
 }
 
+/* Using pseudo classes/elements */
+/* Using Grid layout */
+
 .reservation-form div:nth-child(1) {
 	color: #e63b1d;
 	grid-column: 1/4;
@@ -224,6 +234,8 @@ textarea {
 .text {
 	text-align: justify;
 }
+
+/* Floating elements */
 
 .img-float-left {
 	float: left;
@@ -290,11 +302,13 @@ textarea {
 	background-color: #ED1B12;
 }
 
+/* Using pseudo classes/elements */
+
 .pizzaback1 div:last-child {
 	border-bottom: none;
 }
 
-
+/* Use of block elements */
 .menu-img-1 {
 	display: block;
 	width: 500px;
@@ -374,6 +388,8 @@ section img {
 	padding-left: 100px;
 }
 
+/* Handling overflow */
+
 .img-container {
 	overflow: hidden;
 	width: 810px;
@@ -431,6 +447,7 @@ section img {
 	bottom: 40px;
 }
 
+/** Focus Pseudo Class to Format Valid and Invalid Selected Boxes **/
 
 input:valid:focus {
 	border: 4px solid green;

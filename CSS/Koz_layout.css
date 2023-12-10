@@ -15,7 +15,7 @@
 	float: right;
 }
 
-
+/* The followinf implement responsive design to different screen widths using @media and flex/flexbox */
 
 /*Media
 ---------------------*/
@@ -64,6 +64,7 @@
 		margin-left: 0px;
 	}
 
+	/* Format for list */
 
 	#menu-horizontal {
 		display: none;
@@ -103,6 +104,7 @@
 		display: none;
 	}
 
+	/* Using flex in responsive design */
 
 	.reservation-form {
 		margin: 0 20px;
