@@ -1,0 +1,451 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Playpen+Sans:wght@400;500&display=swap');
+/*
+			Project Web Developement
+			General Information about Koz's Food Truck
+			Author: Mirian Carvalho
+			Date: 09/09/2023
+			Filename: koz_styles.css
+  
+
+*/
+/* Color Palete
+--------------------
+•	Primary Color (Red): #FF6347 (Tomato red)
+•	Secondary Color (Gray): #808080 (Gray) and #D3D7DD (Light Gray)
+•	Accent Color (Yellow): #FFD700 (Gold)
+•	Text Color (black): #000000
+•	Text Color and background (White): #FFFFF
+
+*/
+
+
+/* Global Styled
+-------------------------*/
+* {
+	/* margin: 0 auto; */
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Playpen Sans', cursive;
+	font-weight: 400;
+	font-size: 1.1rem;
+	background-color: #FFD700;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+	position: relative;  /* Added to positon Clock */
+}
+
+/* buttom*/
+
+h1 {
+	color: #000000;
+	text-align: center;
+	font-family: 'Playpen Sans', cursive;
+	font-size: 4rem;
+	color: #FF6347;
+	text-shadow: #808080 1px 2px;
+}
+
+h2.second,
+h3.third {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#menu-horizontal {
+	margin-top: 10px;
+	text-align: center;
+}
+
+#menu-horizontal ul {
+	width: 100%;
+	list-style-type: none;
+	padding: 15px;
+}
+
+#menu-horizontal ul li {
+	display: inline-block;
+}
+
+#menu-horizontal ul li a {
+	display: inline;
+	color: #000000;
+	/* padding: 10px; */
+	text-decoration: none;
+	transition: background .4s;
+}
+
+#menu-horizontal ul li a:hover {
+	background-color: #FFD700;
+
+}
+
+#menu-vertical {
+	display: none;
+	margin-top: 10px;
+	text-align: center;
+	width: 450px;
+}
+
+#menu-vertical ul {
+	width: 50%;
+	list-style-type: none;
+	padding: 15px;
+}
+
+#menu-vertical ul li {
+	margin-bottom: 5px;
+}
+
+#clock {
+	position: fixed;
+	top: 30px;
+	right: 14px;
+}
+
+/* Home Page
+--------------------------*/
+.First {
+	color: #FF6347;
+	text-align: center;
+}
+
+/* For special offer */
+
+h2.special {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2.special span {
+	background-color: #e63b1d;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 8px;
+	min-width: 200px;
+}
+
+
+.contact-ledt {
+	border-radius: 12px;
+	/* border: 3px solid #000; */
+	background-color: #FFF;
+	padding: 0 30px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-ledt h2 {
+	color: #FF6347;
+	text-align: center;
+	background-color: #FFF;
+	font-weight: 400;
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+input,
+textarea {
+	width: 100%
+}
+
+input[type],
+textarea {
+	border: 2px solid #808080;
+	border-radius: 4px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	resize: vertical;
+	background-color: #FFF;
+}
+
+.centro {
+	text-align: center;
+	font-size: 12pt;
+	padding-bottom: 50px;
+}
+
+/* .reservation-form {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: #FFF;
+	padding: 0 0 20px 30px;
+} */
+
+.reservation-form div,
+.reservation-form div label {
+	padding-bottom: 5px;
+	background-color: #FFF;
+}
+
+.reservation-form div label {
+	display: inline-block;
+	padding-bottom: 2px;
+}
+
+.reservation-form div:nth-child(1) {
+	color: #e63b1d;
+	grid-column: 1/4;
+
+}
+
+.reservation-form div:nth-child(2) {
+	color: #e63b1d;
+	grid-column: 1/4;
+}
+
+.reservation-form div:nth-child(3) {
+	color: #e63b1d;
+	grid-column: 1/4;
+}
+
+.reservation-form div:nth-child(4) {
+	color: #e63b1d;
+	grid-column: 1/4;
+}
+
+.reservation-form div:nth-child(5) {
+	color: #e63b1d;
+	grid-column: 1/2;
+}
+
+
+/* About us
+-----------------------------------*/
+
+.text {
+	text-align: justify;
+}
+
+.img-float-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	width: 215px
+}
+
+.img-float-right {
+	float: right;
+	margin: 10px 0 10px 10px;
+	border-radius: 10px;
+	width: 215px
+}
+
+/* Menu Page
+-----------------------------------*/
+
+.bodymenu {
+	position: relative;
+}
+
+.pizzamenu {
+	float: right;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	background-image: pizzamenu;
+	background-position: 10px 10px;
+	background-size: 100%;
+
+}
+
+.pizza-menu-container {
+	background-color: #FFD700;
+}
+
+.pizzaback1 {
+	width: 1000px;
+	background-color: #ED1B12;
+	border: solid 1px #000;
+	margin-bottom: 15px;
+	z-index: 5;
+
+}
+
+.pizzaback1 p,
+.pizzaback1 span {
+	background-color: #ED1B12;
+}
+
+.pizzaback1 span {
+	display: inline-block;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.pizzaback1 div {
+	display: flex;
+	justify-content: space-between;
+	padding: 1px 20px;
+	/* border-bottom: solid 2px #000000; */
+	background-color: #ED1B12;
+}
+
+.pizzaback1 div:last-child {
+	border-bottom: none;
+}
+
+
+.menu-img-1 {
+	display: block;
+	width: 500px;
+	position: absolute;
+	top: 1290px;
+	/* border-radius: 30%; */
+	left: 450px;
+	background-color: #ED1B12;
+}
+
+.menu-img-2 {
+	/* display: block; */
+	width: 500px;
+	position: absolute;
+	top: 570px;
+	/* border-radius: 30%; */
+	right: 70px;
+	background-color: #ED1B12;
+}
+
+
+
+
+/* Contact
+------------------------ */
+.truck22 {
+	/* border: 1px solid gray; */
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	background: no repeat top left;
+	text-align: left;
+	padding: 8px;
+
+}
+
+
+
+
+
+/* Aside and Blockquote Styles */
+
+
+
+
+
+/* Navigation Styles */
+/* About Page*/
+
+/* List Styles */
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: #D3D7DD;
+
+}
+
+.active {
+	background-color: white;
+}
+
+
+
+/* Footer Menu page Styles */
+.pemenu {
+	text-align: center;
+	padding-top: 400px;
+	padding-bottom: 55px;
+	font-size: 1.5rem;
+}
+
+section img {
+	padding-left: 100px;
+}
+
+.img-container {
+	overflow: hidden;
+	width: 810px;
+	height: 500px;
+}
+
+.img-container .pizza-img {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	margin-left: 100px;
+	transform: translateX(-810px);
+	animation: moveRight 2.5s ease-in-out 1s forwards;
+}
+
+.pizza-img-generic {
+	overflow: hidden;
+	width: 810px;
+	height: 500px;
+	margin-left: 100px;
+}
+
+@keyframes moveRight {
+	from {
+		transform: translateX(-810px);
+		opacity: .25;
+	}
+
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+.floated-section {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.floated-section div {
+	width: 31%;
+	margin: 10px 5px 30px 15px;
+	float: right;
+	background-color: #f2f2f2;
+	text-align: center;
+	line-height: 100px;
+	background-color: #FFD700;
+}
+
+.home-img {
+	position: relative;
+	width: 100%;
+	right: 50px;
+	bottom: 40px;
+}
+
+
+input:valid:focus {
+	border: 4px solid green;
+	outline: none;
+}
+
+input:invalid:focus {
+	border: 4px solid red;
+	outline: none;
+}
+
+/* RegisterKoz HTML  */
+
+#rangeValue {
+	display: inline;
+	background-color: white;
+}
+

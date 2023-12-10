@@ -1,0 +1,210 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+	<!--
+			Project Web Developement
+			General Information about Koz's Food Truck
+			Author: Mirian Carvalho
+			Date: 09/09/2023
+			Filename: Project Food Truck.html
+		-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="keywords" content="Food Truck" />
+	<title>Register | Project Koz's Food Truck</title>
+	<link rel="stylesheet" href="CSS/Koz_styles.css" />
+	<link rel="stylesheet" href="CSS/Koz_layout.css" />
+</head>
+
+<body>
+	<nav id="menu-horizontal">
+		<ul>
+			<li><a href="ProjectFoodTruck.html">Home Page</a></li>
+			<li><a href="AboutKoz.html">About us</a></li>
+			<li><a href="Menu.html">Menu</a></li>
+			<li><a href="ContactKoz.html">Contact</a></li>
+			<li><a href="RegisterKoz.html">Register</a></li>
+		</ul>
+	</nav>
+	<nav id="menu-vertical">
+		<ul>
+			<li><a href="ProjectFoodTruck.html">Home Page</a></li>
+			<li><a href="AboutKoz.html">About us</a></li>
+			<li><a href="Menu.html">Menu</a></li>
+			<li><a href="ContactKoz.html">Contact</a></li>
+			<li><a href="RegisterKoz.html">Register</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1> Contact Koz`s Food Truck</h1>
+		<img class="pizza-img-generic" src="images/TruckPizza3.svg" alt="Truck pizza" />
+	</section>
+
+	<section class="Contact-section">
+		<div class="container">
+			<div class="contact-ledt">
+				<h2>Registation</h2>
+				<form id="regForm" class="reservation-form" action="">
+					<!--required is added--> 
+					<div>
+						<label for="firstname">First Name</label>
+						<input type="text" id="firstname" name="firstname" required>
+					</div>
+					<!--required is added and a minimum length is added--> 
+					<div>
+						<label for="lastname">Last Name</label>
+						<input type="text" id="lastname" name="lastname" min="2" required>
+					</div>
+
+					<!-- Pattern for Email -->
+					<div>
+						<label for="email">Email</label>
+						<input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter your email" name="email" required>
+					</div>
+
+					<!-- Length for Password - Minimum of 5 characters -->
+					<div>
+						<label for="password">Password</label>
+						<input type="text" id="password" name="password" min="5" required>
+					</div>
+
+					<!-- Favorite Pizza - Datalist with Input --> 
+					<div>
+						<label for="favorite-pizza">Favorite Pizza</label>
+						<input list="favorite-pizza-list" type="text" id="favorite-pizza" name="favorite-pizza">
+						<datalist id="favorite-pizza-list">
+							<option value="Cheese Pizza">
+							<option value="Peperoni Pizza">
+							<option value="Sausage Pizza">
+						</datalist>
+					</div>
+
+					<!-- Date/Time Input -->
+
+					<div>
+						<label for="date">Email 2</label>
+						<input type="date" id="date" name="date" placeholder="me@example.com">
+					</div>
+
+					<!-- Radio Buttons Input -->
+					<div>
+						<label for="male">Male</label>
+						<input type="radio" id="male" name="gender" value="male">
+					</div>
+
+					<div>
+						<label for="female">Female</label>
+						<input type="radio" id="female" name="gender" value="female">
+					</div>
+
+					<div>
+						<label for="other">Other</label>
+						<input type="radio" id="other" name="gender" value="other">
+					</div>
+
+
+					<!-- Spinners, Numeric Input -->
+					<div>
+						<label for="">Maximun Number of Pizza Ordered in a Day </label>
+						<input type="number" min="1" max="100" step="1" value="3">
+					</div>
+
+					<!-- Range Slider Input -->
+					<div>
+						<label for="experience">How many pizzas do you buy pizza a month <span id="rangeValue">3</span></label><br>
+						<input id="inputRange"  type="range" id="experience" name="experience" min="1" max="50" value="1">
+						
+					</div>
+
+
+					<!-- Check Boxes Input -->
+					<div>
+						<label for="interests">Interests:</label><br>
+						<input type="checkbox" id="interest1" name="interest" value="music">
+						<label for="interest1"> Music</label><br>
+						<input type="checkbox" id="interest2" name="interest" value="sports">
+					</div>
+
+					<div>
+						<label for="interest2"> Sports</label><br>
+						<input type="checkbox" id="interest3" name="interest" value="travel">
+						<label for="interest3"> Travel</label><br>
+					</div>
+
+					<!-- Selection List -->
+					<div>
+						<label for="proficiency">Select Proficiency in a Programming Language:</label><br>
+						<select id="proficiency" name="proficiency">
+							<option value="beginner">Beginner</option>
+							<option value="intermediate">Intermediate</option>
+							<option value="advanced">Advanced</option>
+							<option value="expert">Expert</option>
+						</select>
+					</div>
+
+					<!-- Textarea Tag -->
+					<div>
+						<label for="address">Address</label>
+						<textarea name="address" id="address" cols="30" rows="12" required></textarea>
+					</div>
+
+					<div>
+						<label for="number">Zipcode</label>
+						<input type="number" id="zipcode" name="zipcode" required>
+					</div>
+
+					<!-- Input For Mobile with type of tel:  -->
+					<div>
+						<label for="">Phone Number</label>
+						<input type="tel" inputmode="numeric">
+					</div>
+					<!-- Input -->
+
+					<!-- ************************************************ -->
+					
+					<!-- Submit Button -->
+					<div>
+						<label for="reset">Register</label>
+						<input id="submit" type="submit" class="Send-message-cta" value="Register">
+					</div>
+
+					<!-- Reset Button -->
+					<div>
+						<label for="reset">Reset</label>
+						<input type="reset" class="Send-message-cta reset" name="reset">
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</section>
+	<div>
+		<p>Contact Koz's Food Truck for your next event or establishment and just find out where our mobile truck will
+			be in the next area.</p>
+		<p>For business and reservation call us.</p>
+		<address>
+			We are located anywhere you want us to be in North Carolina.
+		</address>
+
+		<p><strong>Call:</strong> <a href="tel:+1704-345-1175">704-345-1175</a></p>
+		<p><strong>Email:</strong> <a href="mailo:Kozfoodtruck@gmail.com">Kozfoodtruck@gmail.com</a></p>
+		<p><strong>Follow us at instagram:</strong><a href="mailo:@Kozfoodtruck">@Kozfoodtruck</a></p>
+	</div>
+
+	<script>
+		document.getElementById("inputRange").addEventListener("input", function() {
+			document.getElementById("rangeValue").textContent = document.getElementById("inputRange").value;
+		})
+		document.getElementById("regForm").addEventListener("submit", function(event) {
+			event.preventDefault();
+			alert("Registration Sent!!")
+		})
+
+	</script>
+</body>
+<footer>
+
+</footer>
+
+</html>
